@@ -18,40 +18,42 @@ const Home = () => {
                         <Card.ImgOverlay>
                             <Card.Title></Card.Title>
                             <Card.Text>
-                                <Row className="align-items-end">
-                                    <Col lg={4}>
-                                        <Alert className={"custom-alert"}>
-                                            <p className={"fw-bold"}>RÉACTIVITÉ</p>
-                                            <p>
-                                                Nous nous engageons à
-                                                enlever vos biens avec les
-                                                meilleurs délais.</p>
-                                        </Alert>
-                                    </Col>
-                                    <Col lg={4}>
-                                        <Alert className={"custom-alert"}>
-                                            <p className={"fw-bold"}>ÉCOUTE ET ADAPTABILITÉ </p>
-                                            <p>
-                                                Notre offre s’appuie sur la description des
-                                                lieux, des photos et des données de
-                                                surface et de volume que vous nous
-                                                fournirez.
-                                            </p>
-                                        </Alert>
-                                    </Col>
+                                <Container className="mt-4">
+                                    <Row className="g-3">
+                                        <Col md={4} className="d-flex">
+                                            <Card className="w-100">
+                                                <Card.Body>
+                                                    <Card.Title>Colonne 1</Card.Title>
+                                                    <Card.Text>
+                                                        Petit contenu.
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                        <Col md={4} className="d-flex">
+                                            <Card className="w-100">
+                                                <Card.Body>
+                                                    <Card.Title>Colonne 2</Card.Title>
+                                                    <Card.Text>
+                                                        Contenu moyen avec un peu plus de texte pour voir l'effet.
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                        <Col md={4} className="d-flex">
+                                            <Card className="w-100">
+                                                <Card.Body>
+                                                    <Card.Title>Colonne 3</Card.Title>
+                                                    <Card.Text>
+                                                        Contenu très long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    </Row>
+                                </Container>
 
-                                    <Col lg={4}>
-                                        <Alert className={"custom-alert"}>
-                                            <p className={"fw-bold"}>FIABILITÉ ET SATISFACTION</p>
-                                            <p>
 
-                                                Nous respectons nos engagements et
-                                                nos valeurs dans l’exercice de notre
-                                                mission pour renforcer votre
-                                                confiance.</p>
-                                        </Alert>
-                                    </Col>
-                                </Row>
                             </Card.Text>
                         </Card.ImgOverlay>
                     </Card>

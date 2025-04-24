@@ -8,6 +8,8 @@ import NotFound from "./composant/NotFound";
 import {Container, Image, Nav, Navbar, NavDropdown, Row} from "react-bootstrap";
 import Home from "./composant/Home";
 import Actualite from "./composant/Actualite";
+import Particulier from "./composant/Particulier";
+import Professionnel from "./composant/Professionnel";
 
 
 const App = () => {
@@ -48,8 +50,8 @@ const App = () => {
                     <Route path="/apropos" element={<Apropos/>}/>
                     <Route path="/mission" element={<Apropos/>}/>
                     <Route path="/actualite" element={<Actualite/>}/>
-                    <Route path="/particuliers" element={<Actualite/>}/>
-                    <Route path="/professionnels" element={<Actualite/>}/>
+                    <Route path="/particuliers" element={<Particulier/>}/>
+                    <Route path="/professionnels" element={<Professionnel/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </div>

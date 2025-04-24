@@ -5,7 +5,7 @@ import Mission from "./composant/Mission";
 import {Link, Route, Routes} from "react-router-dom";
 import Apropos from "./composant/Apropos";
 import NotFound from "./composant/NotFound";
-import {Container, Image, Nav, Navbar, NavDropdown, Row} from "react-bootstrap";
+import {Image, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import Home from "./composant/Home";
 import Actualite from "./composant/Actualite";
 import Particulier from "./composant/Particulier";

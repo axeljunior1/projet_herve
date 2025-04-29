@@ -1,79 +1,37 @@
-import React from "react";
-import {Container, Row, Col, Button, Card, Alert} from "react-bootstrap";
-import {useNavigate} from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Aceuil1} from "./Aceuil1";
+import {Aceuil2} from "./Aceuil2";
+import {Aceuil3} from "./Aceuil3";
+
+
+const elements = [
+    <div key="1"><Aceuil1/></div>,
+    <div key="2"><Aceuil2/></div>,
+    <div key="3"><Aceuil3/></div>
+];
+
+
 
 
 const Home = () => {
 
-    const navigate = useNavigate();
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex(prev => (prev + 1) % elements.length);
+        }, 60000); // 60000 ms = 1 minute
+
+        return () => clearInterval(interval); // nettoyage
+    }, []);
 
     return (
         <div className="">
 
 
-            <Row>
-                <Col lg={9}>
-                    <Card className="bg-dark text-white">
-                        <Card.Img src="/nature.jpg" height={300} alt="Card image"/>
-                        <Card.ImgOverlay>
-                            <Card.Title></Card.Title>
-                            <Card.Text>
-                                <Container className="mt-4">
-                                    <Row className="g-3">
-                                        <Col md={4} className="d-flex">
-                                            <Card className="w-100">
-                                                <Card.Body>
-                                                    <Card.Title>Colonne 1</Card.Title>
-                                                    <Card.Text>
-                                                        Petit contenu.
-                                                    </Card.Text>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={4} className="d-flex">
-                                            <Card className="w-100">
-                                                <Card.Body>
-                                                    <Card.Title>Colonne 2</Card.Title>
-                                                    <Card.Text>
-                                                        Contenu moyen avec un peu plus de texte pour voir l'effet.
-                                                    </Card.Text>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={4} className="d-flex">
-                                            <Card className="w-100">
-                                                <Card.Body>
-                                                    <Card.Title>Colonne 3</Card.Title>
-                                                    <Card.Text>
-                                                        Contenu très long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                                                    </Card.Text>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Container>
-
-
-                            </Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-                <Col lg={3}>
-
-                    <Alert className={"custom-alert"}>
-                        <p>
-
-                            Nous caractérisons,
-                            trions vos biens et
-                            déchets et prenons
-                            soin de la
-                            revalorisation (don,
-                            science4us,
-                            recyclage).</p>
-                    </Alert>
-                </Col>
-            </Row>
-
+            <div>
+                {elements[index]}
+            </div>
         </div>
     );
 };

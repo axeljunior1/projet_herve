@@ -6,8 +6,8 @@ const Apropos = () => {
 
     return (
         <div>
-            <h1 className="my-5 text-center">Particulier</h1>
-            <div>
+            <h1 className="my-5 text-center">Particuliers</h1>
+            <div className="fs-5">
 
                 <p>
                     Parce que nous sommes tous responsable des déchets que nous produisons, nous

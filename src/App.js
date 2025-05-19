@@ -10,11 +10,12 @@ import Home from "./composant/Home";
 import Actualite from "./composant/Actualite";
 import Particulier from "./composant/Particulier";
 import Professionnel from "./composant/Professionnel";
+import Footer from "./composant/Footer";
 
 
 const App = () => {
     return (
-        <>
+        < div  className="app-wrapper d-flex flex-column min-vh-100"  >
             <Navbar expand="lg" className="bg-body-tertiary justify-content-between border shadow-sm px-4 mb-5 text-black"
                     style={{ borderRadius: "10px", backdropFilter: "blur(8px)" }}>
                 {/* LOGO À GAUCHE */}
@@ -33,12 +34,13 @@ const App = () => {
                             <NavDropdown.Item as={Link} to="/professionnels"> Professionnels</NavDropdown.Item>
                         </NavDropdown>
 
-                        <NavDropdown title="A PROPOS" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to="/apropos" className="text-black">Qui sommes-nous ?</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/mission" className="text-black">Notre engagement</NavDropdown.Item>
-                        </NavDropdown>
+                        {/*<NavDropdown title="A PROPOS" id="basic-nav-dropdown">*/}
+                        {/*    <NavDropdown.Item as={Link} to="/apropos" className="text-black">Qui sommes-nous ?</NavDropdown.Item>*/}
+                        {/*</NavDropdown>*/}
 
+                        <Nav.Link as={Link} to="/apropos" className="text-black">QUI SOMMES-NOUS ?</Nav.Link>
                         <Nav.Link as={Link} to="/actualite" className="text-black">ACTUALITÉS</Nav.Link>
+                        <Nav.Link as={Link} to="/mission" className="text-black">NOTRE ENGAGEMENT</Nav.Link>
                         <Nav.Link as={Link} to="/contact" className="text-black">CONTACT</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -56,8 +58,10 @@ const App = () => {
                 </Routes>
             </div>
 
+            <Footer/>
 
-        </>
+
+        </div>
 
     );
 };

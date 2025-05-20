@@ -1,12 +1,21 @@
 import {Alert, Button, Card, Col, Container, Image, Row} from "react-bootstrap";
 import React from "react";
+import AnimatedGallery from "./AnimatedGallery";
 
 export const Aceuil3 = () => {
+
+    const imageList = [
+        "./assets/image/bureau d_étude & architecte.jpeg",
+        "./assets/image/entreprise de la tech.png",
+        "./assets/image/equipement-medical-1.jpeg",
+        "./assets/image/salle de classe.jpeg",
+        "./assets/image/secteur_btp.jpeg"
+    ];
+
+
     return (
 
         <div>
-            <p>Ac 3</p>
-
             <Row>
                 <Col lg={9}>
                     <Card className="bg-dark text-white position-relative">
@@ -80,20 +89,8 @@ export const Aceuil3 = () => {
 
                 </Col>
             </Row>
-            <Row className=" pt-5 ms-auto justify-content-center">
-                <Col lg={4}>
-                    <Image src="./assets/image/pollutec_blogpost.jpeg" width={300} alt="Card image"
-                           className="overflow-hidden"/>
-                </Col>
-                <Col lg={4}>
-                    <Image src="./assets/image/pollutec_blogpost.jpeg" width={300} alt="Card image"
-                           className="overflow-hidden"/>
-                </Col>
-                <Col lg={4}>
-                    <Image src="./assets/image/pollutec_blogpost.jpeg" width={300} alt="Card image"
-                           className="overflow-hidden"/>
-                </Col>
-            </Row>
+
+            <AnimatedGallery imageList={imageList} />
 
             <div>
                 <p className="mt-3 px-5">

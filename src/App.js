@@ -29,6 +29,7 @@ const App = () => {
                 {/* MENUS CENTRÉS AVEC ESPACEMENT ÉGAL */}
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center text-black">
                     <Nav className="mx-5 gap-4" >  {/* `gap-4` pour plus d'espace entre les éléments */}
+                        <Nav.Link as={Link} to="/" className="text-black">ACCUEIL</Nav.Link>
                         <NavDropdown title="NOS SERVICES" id="basic-nav-dropdown" className="text-black">
                             <NavDropdown.Item as={Link} to="/particuliers"> Particuliers</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/professionnels"> Professionnels</NavDropdown.Item>

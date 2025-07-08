@@ -76,9 +76,7 @@ export const Aceuil1 = () => {
 
                 </Col>
             </Row>
-            <AnimatedGallery imageList={imageList} />
-
-            <ImageCarousel  />
+            <AnimatedGallery imageList={imageList} carousel={<ImageCarousel/>} />
 
             <div>
                 <p className="mt-3 px-5">

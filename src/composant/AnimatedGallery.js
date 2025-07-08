@@ -1,5 +1,6 @@
-import { Row, Col, Image } from 'react-bootstrap';
+import {Row, Col, Image, Carousel} from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import ImageCarousel from "./ImageCarousel";
 
 
 const MotionImage = motion(Image);
@@ -19,6 +20,11 @@ const AnimatedGallery = (props) => {
                     />
                 </Col>
             ))}
+            {props.carousel &&
+            <Col  lg={3} className="mb-4">
+                {props.carousel}
+            </Col>
+            }
         </Row>
     );
 };

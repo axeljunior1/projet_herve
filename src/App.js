@@ -36,9 +36,6 @@ const App = () => {
                             <NavDropdown.Item as={Link} to="/professionnels"> Professionnels</NavDropdown.Item>
                         </NavDropdown>
 
-                        {/*<NavDropdown title="A PROPOS" id="basic-nav-dropdown">*/}
-                        {/*    <NavDropdown.Item as={Link} to="/apropos" className="text-black">Qui sommes-nous ?</NavDropdown.Item>*/}
-                        {/*</NavDropdown>*/}
 
                         <Nav.Link as={Link} to="/apropos" className="text-black">QUI SOMMES-NOUS ?</Nav.Link>
                         <Nav.Link as={Link} to="/actualite" className="text-black">ACTUALITÉS</Nav.Link>
@@ -57,7 +54,6 @@ const App = () => {
                     <Route path="/actualite" element={<Actualite/>}/>
                     <Route path="/particuliers" element={<Particulier/>}/>
                     <Route path="/professionnels" element={<Professionnel/>}/>
-                    {/*<Route path="/hp" element={<HomePage/>}/>*/}
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </div>

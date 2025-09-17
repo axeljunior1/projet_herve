@@ -27,11 +27,8 @@ const Home = () => {
 
     return (
         <div className="">
-
-
             <div>
                 {elements[index]}
-
             </div>
         </div>
     );

@@ -10,6 +10,12 @@ export const Aceuil1 = () => {
         "./assets/image/entreprise de la tech.png",
     ];
 
+    const imagesCaroucel =      [
+        './assets/image/equipement-medical-1.jpeg',
+        './assets/image/ambitions_salle_multi-média.webp',
+        './assets/image/déchets trié.png'
+    ];
+
 
     return (
 
@@ -76,7 +82,7 @@ export const Aceuil1 = () => {
 
                 </Col>
             </Row>
-            <AnimatedGallery imageList={imageList} carousel={<ImageCarousel/>} />
+            <AnimatedGallery imageList={imageList} imagesCaroucel={imagesCaroucel} />
 
             <div>
                 <p className="mt-3 px-5">

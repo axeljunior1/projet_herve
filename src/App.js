@@ -7,7 +7,6 @@ import Apropos from "./composant/Apropos";
 import NotFound from "./composant/NotFound";
 import Home from "./composant/Home";
 import Footer from "./composant/Footer";
-import HomePage from "./composant/HomePage";
 import Actualite from "./composant/Actualite";
 import Particulier from "./composant/Particulier";
 import Professionnel from "./composant/Professionnel";
@@ -58,7 +57,7 @@ const App = () => {
                     <Route path="/actualite" element={<Actualite/>}/>
                     <Route path="/particuliers" element={<Particulier/>}/>
                     <Route path="/professionnels" element={<Professionnel/>}/>
-                    <Route path="/hp" element={<HomePage/>}/>
+                    {/*<Route path="/hp" element={<HomePage/>}/>*/}
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </div>

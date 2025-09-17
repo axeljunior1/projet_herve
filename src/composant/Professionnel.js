@@ -1,5 +1,4 @@
 import React from 'react';
-import {Alert, Col, Row} from "react-bootstrap";
 import "./apropos.css";
 
 const Apropos = () => {

@@ -1,4 +1,4 @@
-import {Alert, Button, Card, Col, Container, Image, Row} from "react-bootstrap";
+import {Alert, Button, Card, Col, Container, Row} from "react-bootstrap";
 import React from "react";
 import AnimatedGallery from "./AnimatedGallery";
 
